@@ -14,6 +14,14 @@
       "label": "Hugo Server",
       "onAutoForward": "notify"
     }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bungcip.better-toml",
+        "shyyko.hugo-tools"
+      ]
+    }
   }
 }
 
