@@ -1,0 +1,25 @@
+{
+  "name": "Hugo & Firebase Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+
+  "postCreateCommand": "sudo npm install -g firebase-tools",
+
+  "forwardPorts": [1313],
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bunger.vscode-hugo-helper",
+        "ms-vscode.vscode-node-azure-pack"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  }
+}
